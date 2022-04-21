@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 button:disabled {
   opacity: 0.5;
   pointer-events: none;
@@ -531,3 +536,51 @@ body {
 .btn-submit:hover {
   background-color: #090909 !important;
 }
+
+
+.pagination {
+  display: flex;
+  justify-content:start;
+  list-style: none;
+  margin-top: 20px;
+  padding: 0;
+  margin-right: 300px;
+  /* width: 10px; */
+  /* background-color: #00bcd4; */
+ }
+ 
+ .pagination a {
+  cursor: default;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #6c7ac9;
+  color: #6c7ac9;
+  /* margin-left: 10px; */
+ }
+ 
+ .pagination li:not(.disabled) a:hover {
+  background-color: bisque;
+  cursor: pointer;
+ }
+ 
+ .pagination li a {
+  font-weight: bold;
+ }
+ .pagination li  {
+  /* font-weight: bold; */
+  margin-left: 10px;
+ }
+ 
+ .pagination li.active a {
+  color: #fff;
+  background: #6c7ac9;
+ }
+ /* .nams{
+   background-color: #00bcd4;
+ } */
+/*  
+ .pagination li.disabled a {
+  pointer-events: none;
+  color: rgb(198, 197, 202);
+  border: 1px solid rgb(198, 197, 202);
+ } */

@@ -2,7 +2,7 @@ import axios from "axios";
 
 export class productapi {
   getProduct() {
-    return axios.get(process.env.REACT_APP_AllProduct);
+    return axios.get("/products");
   }
 
   productByName(data) {

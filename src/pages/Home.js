@@ -8,6 +8,8 @@ import { Cartapi } from "../services/Cart";
 import { productapi } from "../services/Product";
 
 export function Home({ setCart, setCartquantity, loginstatus }) {
+  // console.log("hello");
+
   const history = useHistory();
   const [apidata, setApiData] = useState([]);
   const [filterdata, setFilterdata] = useState([]);
