@@ -8,7 +8,7 @@ import { Cartapi } from "../services/Cart";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 // import "../style/productdetail.css";
-export function ProductDetails({ setCartquantity }) {
+export function ProductDetails({ setCartquantity, setCart, productid }) {
   const history = useHistory();
   const [apidata, setApiData] = useState([]);
 

@@ -15,9 +15,9 @@ export function AdminHome({ adminloginstatus }) {
 
   const token = localStorage.getItem("token");
 
+  const { decodedToken } = useJwt(token);
   if (!token) history.push("/admin/login");
   if (token) {
-    const { decodedToken } = useJwt(token);
     if (!decodedToken?.role == "admin") history.push("/admin/login");
   }
 

@@ -7,7 +7,7 @@ import { Cartapi } from "../services/Cart";
 import { useParams } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 
-export function ProductList({ setCartquantity }) {
+export function ProductList({ setCartquantity, setCart }) {
   const [productlist, setProductList] = useState([]);
 
   const { id } = useParams();

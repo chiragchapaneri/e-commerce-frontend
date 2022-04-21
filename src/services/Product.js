@@ -5,7 +5,7 @@ export class productapi {
     return axios.get("/products");
   }
 
-  productByName(data) {
+  productByName(data, token) {
     return axios.post(process.env.REACT_APP_FindProductByName, data, {
       headers: { token: token },
     });

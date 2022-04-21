@@ -27,7 +27,7 @@ export function ProductCard({ data, addToCart }) {
 
           <NavLink to={`/productdetails/${data._id}`}>
             <img
-              src={data.avatar}
+              src={data.image1}
               className="w-100"
               height={100}
               width={100}

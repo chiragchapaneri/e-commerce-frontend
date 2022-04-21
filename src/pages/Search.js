@@ -4,7 +4,7 @@ import { useHistory, useLocation, useParams } from "react-router-dom";
 import { AdminProductCard } from "../components/AdminProductCard";
 import { ProductCard } from "../components/ProductCard";
 import { productapi } from "../services/Product";
-
+import { Cartapi } from "../services/Cart";
 export function Search() {
   const location = useLocation();
   const [update, setUpdate] = useState();
@@ -94,7 +94,7 @@ export function Search() {
         <div>
           <div className="d-flex flex-wrap justify-content-start  filter-button-group bg-white mt-3 mb-1">
             <h6>
-              <a className="heading" onClick={() => histor.pushy("/")}>
+              <a className="heading" onClick={() => history.pushy("/")}>
                 Home{`>`}
               </a>
               <a className="heading">product{">"}search</a>
